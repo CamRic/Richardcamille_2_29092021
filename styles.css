@@ -1,0 +1,23 @@
+
+body 
+{
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+#mainContainer
+{
+    width: 100%;
+    max-width: 1400px;
+    border: solid black 2px;
+}
+
+header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
