@@ -1,0 +1,13 @@
+
+body 
+{
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+#mainContainer
+{
+    width: 100%;
+    max-width: 1400px;
+}
