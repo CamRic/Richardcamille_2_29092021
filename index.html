@@ -13,26 +13,41 @@
 
     <body>
         <!-- CONTAINER -->
-        <div id="mainContainer">
+        <div id="mainContainer" class="brdr">
             
             <!-- HEADER -->
-            <header class="brdr">
+            <header>
                 <a href="index.html" id="hdr_logo" ><img alt="logo" title="reservia" src="images/logo/logo_mini.png" /></a>
                 <nav id="hdr_nav" class="brdr _red">
                     <ul class="brdr _green">
-                        <li>Hébergements</li>
-                        <li>Activités</li>
+                        <li><a href="#acc_sct">Hébergements</a></li>
+                        <li><a href="#act_sct">Activités</a></li>
                     </ul>
                 </nav>
-                <a href="index.html" class="brdr _red"><p>S'inscrire</p></a>
+                <p><a href="http://www.google.com">S'inscrire</a></p>
             </header>
 
 
             <main>
                 <!-- SEARCH SECTION -->
-                <section>
+                <section id="srch_sct" class="brdr _red">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                    <!-- input -->
+                    <fieldset class="srch_input">
+                        <svg class="map_mrkr_svg">
+                            <image xlink:href="images/logo/map-marker-alt-solid.svg" width="20" x=15 y=15 />
+                        </svg>
+                        <input type="text" name="srch_input" value="Marseille, France" />
+                        <button class="srch_bttn">Rechercher</button>
+                    </fieldset>
+                    <!-- filters -->
+                    <div class="fltr_cntnr">
 
+                    </div>
+                    <p><img class="info_logo" />Plus de 500 logements disponnibles dans cette ville</p>
                 </section>
+                
 
                 <!-- ACCOMODATION SECTION -->
                 <section>
