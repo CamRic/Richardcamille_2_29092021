@@ -1,0 +1,76 @@
+/****************************************/
+/*  __________  DEV HELP ____________  */
+/*
+.brdr
+{
+    border: 2px solid black;
+}
+
+._red
+{
+    border-color: red;
+}
+
+._green
+{
+    border-color: green;
+}
+
+._blue
+{
+    border-color: blue;
+}
+
+/****************************************/
+/*  __________  GENERAL ______________  */
+
+body 
+{
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+#mainContainer
+{
+    width: 100%;
+    max-width: 1400px;
+}
+
+
+/****************************************/
+/*  __________  HEADER ______________  */
+
+header
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Logo */
+#hdr_logo
+{
+    margin-right: auto;
+}
+
+/* nav */
+nav
+{
+    margin-right: 20px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+header li
+{
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    list-style: none;
+}
