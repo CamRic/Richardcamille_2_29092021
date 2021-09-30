@@ -35,6 +35,8 @@ body
 {
     width: 100%;
     max-width: 1400px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -48,7 +50,7 @@ header
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    
+    margin-top: 10px;
 }
 
 
@@ -62,27 +64,90 @@ header
 /* nav */
 nav
 {
-    margin-right: 20px;
+    margin-right: 50px;
+    width: 320px;
 }
 
 header ul
 {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 header li
 {
     display: flex;
     justify-content: center;
-    width: 160px;
+    width: 50%;
     list-style: none;
+}
+
+header a
+{
+    text-decoration: none;
+}
+
+
+/****************************************/
+/*  __________  SEARCH SCT __________  */
+
+#srch_sct
+{
+    margin-top: 50px;
+}
+
+#srch_sct h1
+{
+    margin-bottom: 2px;
+}
+
+#srch_sct p
+{
+    margin-top: 5px;
+}
+
+/* input */
+.srch_input
+{
+    display: flex;
+    padding-left: 0;
+    border: none;
+}
+
+.srch_input input
+{
+    padding-left: 10px;
+    width: 230px;
+}
+
+/* map marker */
+.map_mrkr_svg
+{
+    border: 1px lightgrey solid;
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+
+/* button */
+.srch_sct button
+{
+    width: 130px;
+    height: 50px;
+    border: 1px lightgray solid;
+    border-top-right-radius: 10% 30%;
+    border-bottom-right-radius: 10% 30%;
+    background-color: blue;
+    color: white;
+    font-size: 12pt;
 }
 
 
 /****************************************/
 /*  __________  RESPONSIVE __________  */
-
 
 @media all and (max-device-width: 480px) 
 {
