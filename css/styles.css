@@ -26,7 +26,7 @@
 
 body 
 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	display: flex;
 	justify-content: center;
 }
@@ -107,6 +107,15 @@ header a
     margin-top: 5px;
 }
 
+p img
+{
+    margin-right: 10px;
+}
+#srch_sct img
+{
+    margin-right: 10x;
+}
+
 /* input */
 .srch_input
 {
@@ -117,13 +126,20 @@ header a
 
 .srch_input input
 {
+    border-top: 1px lightgrey solid;
+    border-bottom: 1px lightgrey solid;
+    border-left: none;
+    border-right: none;
     padding-left: 10px;
     width: 230px;
+    font-size: 12pt;
+    font-weight: bold;
 }
 
 /* map marker */
 .map_mrkr_svg
 {
+    display: flex;
     border: 1px lightgrey solid;
     width: 50px;
     height: 50px;
@@ -133,7 +149,7 @@ header a
 }
 
 /* button */
-.srch_sct button
+.srch_bttn
 {
     width: 130px;
     height: 50px;
@@ -145,6 +161,32 @@ header a
     font-size: 12pt;
 }
 
+/* filters */
+.fltr_cntnr
+{
+    display: flex;
+    align-content: space-between;
+    height: 50px;
+    flex-wrap: wrap;
+    max-width: 230px;
+}
+
+.fltr_cntnr p
+{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.fltr
+{
+    display: flex;
+    width: auto;
+    height: 50px;
+    border: 2px solid lightgray;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
 
 /****************************************/
 /*  __________  RESPONSIVE __________  */
@@ -178,6 +220,29 @@ header a
     nav li
     {
         width: 50%;
+    }
+
+    /* search section */
+    .srch_bttn
+    {
+        width: 50px;
+        height: 50px;
+        background-image: url("../images/logo/search-solid.svg");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: 15px 15px;
+        border-radius: 15px;
+        font-size: 0;
+    }
+
+    #srch_sct p
+    {
+        display: flex;
+    }
+
+    .fltr_cntnr
+    {
+        height: auto;
     }
 
 }
