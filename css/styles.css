@@ -355,6 +355,100 @@ p img
     margin-bottom: 10px;
 }
 
+
+/****************************************/
+/*  __________  ACTIVITIES __________  */
+
+#act_sct
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.act_cntnr
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    height: 500px;
+}
+
+.act_elem
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px grey;
+    margin-bottom: 20px;
+}
+
+.act_elem h3
+{
+    height: 55px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.act_img
+{
+    overflow: hidden;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.large
+{
+    height: 390px;
+}
+
+.medium
+{
+    height: 180px;
+}
+
+.small
+{
+    height: 120px;
+}
+
+/* loading photos */ 
+#port_img
+{
+    background-image: url("../images/activites/lbl/vieux_port_lbl_img.jpg");
+}
+
+#pomegue_img
+{
+    background-image: url("../images/activites/lbl/pomegue_lbl_img.jpg");
+}
+
+#frioul_img
+{
+    background-image: url("../images/activites/lbl/frioul_lbl_img.jpg");
+}
+
+#calanques_img
+{
+    background-image: url("../images/activites/lbl/calanques_lbl_img.jpg");
+}
+
+#nddlg_img
+{
+    background-image: url("../images/activites/lbl/nddlg_lbl_img.jpg");
+}
+
+#lngchmp_img
+{
+    background-image: url("../images/activites/lbl/longchamp_lbl_img.jpg");
+}
+
 /****************************************/
 /*  __________  FOOTER ______________  */
 
@@ -475,6 +569,23 @@ footer
         background-image: url("../images/hebergements/mini_hor/cannebiere_l_hor.jpg");
     }
 
+
+    /* ACTIVITY SECTION */
+    .act_cntnr
+    {
+        height: auto;
+        align-content: center;
+    }
+
+    .large
+    {
+        height: 120px;
+    }
+
+    .medium
+    {
+        height: 120px;
+    }
 
     /* FOOTER */
 
