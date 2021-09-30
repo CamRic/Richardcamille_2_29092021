@@ -356,6 +356,38 @@ p img
 }
 
 /****************************************/
+/*  __________  FOOTER ______________  */
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+.footer_elem
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.footer_elem h2
+{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.footer_elem p
+{
+    margin-top: 5px;
+}
+
+
+/****************************************/
 /*  __________  RESPONSIVE __________  */
 
 @media all and (max-device-width: 480px) 
@@ -442,5 +474,9 @@ p img
     {
         background-image: url("../images/hebergements/mini_hor/cannebiere_l_hor.jpg");
     }
-    
+
+
+    /* FOOTER */
+
+      
 }
