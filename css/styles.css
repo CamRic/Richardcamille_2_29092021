@@ -95,6 +95,7 @@ header a
 #srch_sct
 {
     margin-top: 50px;
+    width: 100%;
 }
 
 #srch_sct h1
@@ -166,9 +167,9 @@ p img
 {
     display: flex;
     align-content: space-between;
+    width: 100%;
     height: 50px;
     flex-wrap: wrap;
-    max-width: 230px;
 }
 
 .fltr_cntnr p
@@ -186,6 +187,7 @@ p img
     border-radius: 25px;
     margin-left: 20px;
     margin-bottom: 15px;
+    max-width: 230px;
 }
 
 /****************************************/
