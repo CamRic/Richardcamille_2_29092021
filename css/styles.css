@@ -170,6 +170,7 @@ p img
     width: 100%;
     height: 50px;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .fltr_cntnr p
@@ -188,6 +189,170 @@ p img
     margin-left: 20px;
     margin-bottom: 15px;
     max-width: 230px;
+}
+
+
+/****************************************/
+/*  __________  ACCOMODATION ________  */
+
+#acc_sct
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.all_acc_cntnr
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: lightgrey;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.elem_cntnr
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+}
+
+.acc_elem_large
+{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 12px red;
+}
+
+.acc_elem_large h3
+{
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.acc_elem_large p
+{
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+}
+
+.acc_img_frame
+{
+    align-self: center;
+    margin: 5px;
+    width: 95%;
+    height: 110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    background-image: url("../images/hebergements/mini_hor/cannebiere_mini_hor.jpg");
+    background-repeat: no-repeat;
+}
+
+.acc_img_frame img
+{
+    margin: 0px;
+}
+
+.star_cntnr
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 15px;
+}
+
+.star_cntnr img
+{
+    margin-right: 10px;
+}
+
+/* popular accomodations */
+#pop_acc_cntnr
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 280px;
+    background-color: lightgrey;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.hor_cntnr
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pop_acc_elem_cntnr
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.pop_acc_elem
+{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.pop_acc_img
+{
+    width: 125px;
+    height: 135px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
+    background-image: url("../images/hebergements/mini_ver/soleil_mini_ver.jpg");
+}
+
+.pop_acc_descr
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 10px;
+    height: 100%;
+}
+
+.pop_acc_descr h3
+{
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+.pop_acc_descr p
+{
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+
+.pop_acc_descr .star_cntnr
+{
+    margin-bottom: 10px;
 }
 
 /****************************************/
@@ -247,4 +412,35 @@ p img
         height: auto;
     }
 
+    /* accomodation section */
+    #acc_sct
+    {
+        justify-content: flex-start;
+    }
+
+    #pop_acc_cntnr
+    {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    
+
+    .all_acc_cntnr
+    {
+        background: none;
+        width: 100%;
+    }
+
+    .acc_elem_large
+    {
+        width: 100%;
+        border-top-right-radius: 15px;
+    }
+
+    .acc_img_frame
+    {
+        background-image: url("../images/hebergements/mini_hor/cannebiere_l_hor.jpg");
+    }
+    
 }
