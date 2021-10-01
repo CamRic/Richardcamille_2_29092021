@@ -580,6 +580,7 @@ footer
     {
         height: auto;
         align-content: center;
+        align-items: center;
     }
 
     .act_elem
