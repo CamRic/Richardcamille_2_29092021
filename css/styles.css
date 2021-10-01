@@ -493,6 +493,12 @@ footer
 
 @media all and (max-device-width: 480px) 
 {
+    /* BODY */
+    #mainContainer
+    {
+        max-width: 375px;
+    }
+
     /* HEADER */
     header
     {
