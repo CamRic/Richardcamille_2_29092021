@@ -356,6 +356,10 @@ p img
     width: 100%;
 }
 
+.hor_cntnr img
+{
+    align-self: center;
+}
 .pop_acc_elem_cntnr
 {
     display: flex;
