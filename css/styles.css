@@ -372,6 +372,7 @@ p img
 {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .act_cntnr
@@ -382,7 +383,7 @@ p img
     justify-content: space-between;
     align-content: space-between;
     width: 100%;
-    height: 500px;
+    height: 445px;
 }
 
 .act_elem
@@ -390,9 +391,9 @@ p img
     display: flex;
     flex-direction: column;
     width: 300px;
+    height: 445px;
     border-radius: 20px;
     box-shadow: 1px 1px 12px grey;
-    margin-bottom: 20px;
 }
 
 .act_elem h3
@@ -402,35 +403,32 @@ p img
     margin-bottom: 0px;
     padding-left: 20px;
     padding-top: 10px;
+    width: 100%;
 }
 
-.act_img
+.act_img_frame
 {
-    overflow: hidden;
+    height: 100%;
     width: 100%;
+    overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.large
-{
-    height: 390px;
-}
-
 .medium
 {
-    height: 180px;
+    height: 235px;
 }
 
 .small
 {
-    height: 120px;
+    height: 165px;
 }
 
 /* loading photos */ 
 #port_img
 {
-    background-image: url("../images/activites/lbl/vieux_port_lbl_img.jpg");
+    background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 }
 
 #pomegue_img
@@ -475,7 +473,7 @@ footer
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .footer_elem h2
@@ -578,17 +576,10 @@ footer
         align-content: center;
     }
 
-    .large
+    .act_elem
     {
-        height: 120px;
+        height: 190px;
+        margin-bottom: 25px;
     }
 
-    .medium
-    {
-        height: 120px;
-    }
-
-    /* FOOTER */
-
-      
 }
