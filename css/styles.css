@@ -222,6 +222,7 @@ p img
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    align-self: center;
     width: 100%;
 }
 
@@ -229,12 +230,20 @@ p img
 {
     display: flex;
     flex-direction: column;
+    align-self: center;
     width: 245px;
     height: 200px;
     border-radius: 20px;
     background-color: white;
     margin-bottom: 30px;
     box-shadow: 1px 1px 12px red;
+}
+
+.popular
+{
+    width: 345px;
+    height: 145px;
+    flex-direction: row;
 }
 
 .acc_img_frame
@@ -250,14 +259,32 @@ p img
     background-repeat: no-repeat;
 }
 
+.popular .acc_img_frame
+{
+    width: 125px;
+    height: 135px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
 .acc_dscrpt
 {
     display: flex;
     flex-direction: column;
     width: 235px;
-    height: 70px;
+    height: 65px;
     margin: 5px;
     margin-left: 15px;
+}
+
+.popular .acc_dscrpt
+{
+    width: 200px;
+    height: 115px;
+    margin-top: 15px;
 }
 
 .acc_dscrpt h3
@@ -275,7 +302,7 @@ p img
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 4px;
+    margin-top: auto;
     margin-left: 2px;
 }
 
@@ -286,6 +313,13 @@ p img
 
 @media all and (max-device-width: 480px) 
 {
+    .elem_cntnr
+    {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
     .acc_elem
     {
         width: 335px;
@@ -294,6 +328,11 @@ p img
     .acc_elem .acc_img_frame
     {
         width: 325px;
+    }
+
+    .popular .acc_img_frame
+    {
+        width: 125px;
     }
 }
 
@@ -322,52 +361,7 @@ p img
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-}
-
-.pop_acc_elem
-{
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-}
-
-.pop_acc_img
-{
-    width: 125px;
-    height: 135px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    overflow: hidden;
-    background-image: url("../images/hebergements/mini_ver/soleil_mini_ver.jpg");
-}
-
-.pop_acc_descr
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-left: 10px;
-    height: 100%;
-}
-
-.pop_acc_descr h3
-{
-    margin-bottom: 2px;
-    margin-top: 10px;
-}
-
-.pop_acc_descr p
-{
-    margin-top: 5px;
-    margin-bottom: auto;
-}
-
-.pop_acc_descr .star_cntnr
-{
-    margin-bottom: 10px;
+    align-self: center;
 }
 
 
@@ -571,6 +565,8 @@ footer
     {
         background: none;
         width: 100%;
+        align-self: center;
+        padding: 0px;
     }
 
 
