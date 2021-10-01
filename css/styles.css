@@ -353,6 +353,7 @@ p img
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 .pop_acc_elem_cntnr
