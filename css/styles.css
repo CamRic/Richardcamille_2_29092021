@@ -225,11 +225,11 @@ p img
     width: 100%;
 }
 
-.acc_elem_large
+.acc_elem
 {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 245px;
     height: 200px;
     border-radius: 20px;
     background-color: white;
@@ -237,36 +237,37 @@ p img
     box-shadow: 1px 1px 12px red;
 }
 
-.acc_elem_large h3
-{
-    margin-top: 5px;
-    margin-left: 15px;
-    margin-bottom: 5px;
-}
-.acc_elem_large p
-{
-    margin-left: 15px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 5px;
-}
-
 .acc_img_frame
 {
     align-self: center;
-    margin: 5px;
-    width: 95%;
-    height: 110px;
+    width: 235px;
+    height: 115px;
+    margin-top: 5px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     overflow: hidden;
-    background-image: url("../images/hebergements/mini_hor/cannebiere_mini_hor.jpg");
+    background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
     background-repeat: no-repeat;
 }
 
-.acc_img_frame img
+.acc_dscrpt
 {
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+    height: 70px;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.acc_dscrpt h3
+{
+    margin: 2px;
+}
+
+.acc_dscrpt p
+{
+    margin: 2px;
 }
 
 .star_cntnr
@@ -274,12 +275,26 @@ p img
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: 15px;
+    margin-top: 4px;
+    margin-left: 2px;
 }
 
 .star_cntnr img
 {
-    margin-right: 10px;
+    margin-right: 1px;
+}
+
+@media all and (max-device-width: 480px) 
+{
+    .acc_elem
+    {
+        width: 335px;
+    }
+
+    .acc_elem .acc_img_frame
+    {
+        width: 325px;
+    }
 }
 
 /* popular accomodations */
@@ -558,16 +573,6 @@ footer
         width: 100%;
     }
 
-    .acc_elem_large
-    {
-        width: 100%;
-        border-top-right-radius: 15px;
-    }
-
-    .acc_img_frame
-    {
-        background-image: url("../images/hebergements/mini_hor/cannebiere_l_hor.jpg");
-    }
 
 
     /* ACTIVITY SECTION */
