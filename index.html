@@ -45,31 +45,31 @@
                     <div class="fltr_cntnr">
                         <p>Filtres</p>
                         <!-- economique -->
-                        <svg class="fltr">
-                            <circle cx="25" cy="25" r="25" fill="#DEEBFF" />
+                        <svg class="fltr" id="eco">
+                            <circle cx="25" cy="25" r="26" fill="#DEEBFF" />
                             <image xlink:href="images/logo/money-bill-wave-solid.svg" width="20" height="20" x='15' y='15' />
                             <text x='60' y='30'>Economique</text>
                         </svg>
                         <!-- familial -->
-                        <svg class="fltr">
-                            <circle cx="25" cy="25" r="25" fill="#DEEBFF"/>
+                        <svg class="fltr" id="family">
+                            <circle cx="25" cy="25" r="26" fill="#DEEBFF"/>
                             <image xlink:href="images/logo/child-solid.svg" width="20" height="20" x='15' y='15'/>
                             <text x='60' y='30'>Familial</text>
                         </svg>
                         <!-- romantique -->
-                        <svg class="fltr">
-                            <circle cx="25" cy="25" r="25" fill="#DEEBFF"/>
+                        <svg class="fltr" id="romantic">
+                            <circle cx="25" cy="25" r="26" fill="#DEEBFF"/>
                             <image xlink:href="images/logo/heart-solid.svg" width="20" height="20" x='15' y='15'/>
                             <text x='60' y='30'>Romantique</text>
                         </svg>
                         <!-- animaux -->
-                        <svg class="fltr">
-                            <circle cx="25" cy="25" r="25" fill="#DEEBFF"/>
+                        <svg class="fltr" id="pet">
+                            <circle cx="25" cy="25" r="26" fill="#DEEBFF"/>
                             <image xlink:href="images/logo/dog-solid.svg" width="20" height="20" x='15' y='15'/>
                             <text x='60' y='30'>Animaux autorisés</text>
                         </svg>
                     </div>
-                    <p><img class="info_logo" src="images/logo/info-circle-solid.svg" alt="i" width="20" height="20"/>Plus de 500 logements disponnibles dans cette ville</p>
+                    <p><img class="info_logo" src="images/logo/info-circle-solid.svg" alt="i" width="20" height="20" />Plus de 500 logements disponnibles dans cette ville</p>
                 </section>
                 
 
@@ -77,25 +77,112 @@
                 <section id="acc_sct">
                     <!-- all accomodations -->
                     <div class="all_acc_cntnr">
+
                         <h1>Hébergements à Marseille</h1>
                         <!-- acc elements -->
                         <div class="elem_cntnr">
                             <!-- auberge cannebiere -->
-                            <div class="acc_elem">
-                                <div class="acc_img_frame" id="cannebiere"></div>
-                                <div class="acc_dscrpt">
-                                    <h3>Auberge la Cannebière</h3>
-                                    <p>Nuit à partir de 25e</p>
-                                    <div class="star_cntnr">
-                                        <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
-                                        <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
-                                        <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
-                                        <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
-                                        <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                            <a href="index.html" class="acc_elem_link">
+                                <div class="acc_elem">
+                                    <div class="acc_img_frame" id="cannebiere"></div>
+                                    <div class="acc_dscrpt">
+                                        <h3>Auberge la Cannebière</h3>
+                                        <p>Nuit à partir de 25e</p>
+                                        <div class="star_cntnr">
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid-grey.svg" width="12" />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
+                            </a>
+                            <!-- hôtel du port -->
+                            <a href="index.html" class="acc_elem_link">
+                                <div class="acc_elem">
+                                    <div class="acc_img_frame" id="hotel_port"></div>
+                                    <div class="acc_dscrpt">
+                                        <h3>Hôtel du Port</h3>
+                                        <p>Nuit à partir de 52e</p>
+                                        <div class="star_cntnr">
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- hôtel els mouettes -->
+                            <a href="index.html" class="acc_elem_link">
+                                <div class="acc_elem">
+                                    <div class="acc_img_frame" id="mouettes"></div>
+                                    <div class="acc_dscrpt">
+                                        <h3>Hôtel Les Mouettes</h3>
+                                        <p>Nuit à partir de 76e</p>
+                                        <div class="star_cntnr">
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid-grey.svg" width="12" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- hôtel de la mer -->
+                            <a href="index.html" class="acc_elem_link">
+                                <div class="acc_elem">
+                                    <div class="acc_img_frame" id="hotel_mer"></div>
+                                    <div class="acc_dscrpt">
+                                        <h3>Hôtel de la Mer</h3>
+                                        <p>Nuit à partir de 46e</p>
+                                        <div class="star_cntnr">
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid-grey.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid-grey.svg" width="12" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- auberge le panier -->
+                            <a href="index.html" class="acc_elem_link">
+                                <div class="acc_elem">
+                                    <div class="acc_img_frame" id="panier"></div>
+                                    <div class="acc_dscrpt">
+                                        <h3>Auberge Le Panier</h3>
+                                        <p>Nuit à partir de 23e</p>
+                                        <div class="star_cntnr">
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid-grey.svg" width="12" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- hotel amina -->
+                            <a href="index.html" class="acc_elem_link">
+                                <div class="acc_elem">
+                                    <div class="acc_img_frame" id="amina"></div>
+                                    <div class="acc_dscrpt">
+                                        <h3>Hôtel Chez Amina</h3>
+                                        <p>Nuit à partir de 96e</p>
+                                        <div class="star_cntnr">
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                             
                         </div>
                         <p>Afficher plus</p>
@@ -108,23 +195,56 @@
                         </div>
                         <div class="pop_acc_elem_cntnr">
                             <!-- soleil du matin -->
-                            <div class="acc_elem popular">
-                                <div class="acc_img_frame" id="soleil"></div>
-                                <div class="acc_dscrpt">
-                                    <h3>Hôtel Le soleil du matin</h3>
-                                    <p>Nuit à partir de 128e</p>
-                                    <div class="star_cntnr">
-                                        <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
-                                    <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
-                                    <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
-                                    <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
-                                    <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                            <a class="acc_elem_link" href="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                                <div class="acc_elem popular">
+                                    <div class="acc_img_frame" id="soleil"></div>
+                                    <div class="acc_dscrpt">
+                                        <h3>Hôtel Le soleil du matin</h3>
+                                        <p>Nuit à partir de 128e</p>
+                                        <div class="star_cntnr">
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                             <!-- au coeur de l'eau  -->
-                            
+                            <a class="acc_elem_link" href="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                                <div class="acc_elem popular">
+                                    <div class="acc_img_frame" id="coeur_eau"></div>
+                                    <div class="acc_dscrpt">
+                                        <h3>Hôtel Le soleil du matin</h3>
+                                        <p>Nuit à partir de 128e</p>
+                                        <div class="star_cntnr">
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid-grey.svg" width="12" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                             <!-- tout bleu -->
+                            <a class="acc_elem_link" href="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                                <div class="acc_elem popular">
+                                    <div class="acc_img_frame" id="bleublanc"></div>
+                                    <div class="acc_dscrpt">
+                                        <h3>Hôtel Le soleil du matin</h3>
+                                        <p>Nuit à partir de 128e</p>
+                                        <div class="star_cntnr">
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid.svg" width="12" />
+                                            <img class="str_blue" alt="pt" src="images/logo/star-solid-grey.svg" width="12" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                             
                         </div>
                     </div>
@@ -135,6 +255,7 @@
                     <h1>Activités à Marseille</h1>
                     <div class="act_cntnr">
                         <!-- vieux port -->
+                        
                         <div class="act_elem">
                             <div class="act_img_frame" id="port_img"></div>
                             <h3>Vieux Port</h3>

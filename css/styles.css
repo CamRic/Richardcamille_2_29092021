@@ -86,7 +86,23 @@ header li
 header a
 {
     text-decoration: none;
+    color: #0065fc;
+    font-weight: bold;
 }
+
+header a:visited
+{
+    text-decoration: none;
+    color: #0065fc;
+}
+
+
+nav a
+{
+    text-decoration: none;
+    font-weight: normal;
+}
+
 
 
 /****************************************/
@@ -95,6 +111,7 @@ header a
 #srch_sct
 {
     margin-top: 50px;
+    margin-left: 10px;
     width: 100%;
 }
 
@@ -127,8 +144,8 @@ p img
 
 .srch_input input
 {
-    border-top: 1px lightgrey solid;
-    border-bottom: 1px lightgrey solid;
+    border-top: 1px #f2f2f2;
+    border-bottom: 1px #f2f2f2 solid;
     border-left: none;
     border-right: none;
     padding-left: 10px;
@@ -141,10 +158,10 @@ p img
 .map_mrkr_svg
 {
     display: flex;
-    border: 1px lightgrey solid;
+    border: 1px #f2f2f2 solid;
     width: 50px;
     height: 50px;
-    background-color: lightgray;
+    background-color: #f2f2f2;
     border-top-left-radius: 40%;
     border-bottom-left-radius: 40%;
 }
@@ -157,7 +174,7 @@ p img
     border: 1px lightgray solid;
     border-top-right-radius: 10% 30%;
     border-bottom-right-radius: 10% 30%;
-    background-color: blue;
+    background-color: #0065fc;
     color: white;
     font-size: 12pt;
 }
@@ -177,6 +194,7 @@ p img
 {
     font-weight: bold;
     margin-right: 10px;
+    
 }
 
 .fltr
@@ -184,11 +202,37 @@ p img
     display: flex;
     width: auto;
     height: 50px;
-    border: 2px solid lightgray;
+    border: 2px solid #f2f2f2;
     border-radius: 25px;
     margin-left: 20px;
     margin-bottom: 15px;
     max-width: 230px;
+    overflow: visible;
+}
+
+#eco
+{
+    width: 190px;
+}
+
+#family
+{
+    width: 150px;
+}
+
+#pet
+{
+    width: 240px;
+}
+
+#romantic
+{
+    width: 185px;
+}
+
+.fltr:hover
+{
+    background-color: #deebff;
 }
 
 
@@ -210,7 +254,7 @@ p img
     display: flex;
     flex-direction: column;
     width: 60%;
-    background-color: lightgrey;
+    background-color: #f2f2f2;
     border-radius: 25px;
     padding: 30px;
 }
@@ -236,7 +280,13 @@ p img
     border-radius: 20px;
     background-color: white;
     margin-bottom: 30px;
-    box-shadow: 1px 1px 12px red;
+    box-shadow: 1px 1px 12px grey;
+}
+
+.acc_elem_link
+{
+    color: black;
+    text-decoration: none;
 }
 
 .popular
@@ -257,6 +307,13 @@ p img
     overflow: hidden;
     background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cannebiere
+{
+    background-image: url("../images/hebergements/mini_hor/cannebiere_mini_hor.jpg");
+    
 }
 
 .popular .acc_img_frame
@@ -343,7 +400,7 @@ p img
     flex-direction: column;
     width: 30%;
     min-width: 280px;
-    background-color: lightgrey;
+    background-color: #f2f2f2;
     border-radius: 25px;
     padding: 30px;
 }
@@ -354,13 +411,13 @@ p img
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 20px;
 }
 
 .hor_cntnr img
 {
     align-self: center;
 }
+
 .pop_acc_elem_cntnr
 {
     display: flex;
@@ -419,6 +476,7 @@ p img
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    background-position: center;
 }
 
 .medium
@@ -440,6 +498,7 @@ p img
 #pomegue_img
 {
     background-image: url("../images/activites/lbl/pomegue_lbl_img.jpg");
+    
 }
 
 #frioul_img
@@ -534,6 +593,12 @@ footer
         width: 50%;
     }
 
+    header p
+    {
+        align-self: flex-end;
+    }
+
+
     /* search section */
     .srch_bttn
     {
@@ -550,12 +615,15 @@ footer
     #srch_sct p
     {
         display: flex;
+        width: 100%;
     }
 
     .fltr_cntnr
     {
         height: auto;
     }
+
+    
 
     /* accomodation section */
     #acc_sct
@@ -580,6 +648,10 @@ footer
         padding: 0px;
     }
 
+    #cannebiere
+    {
+        background-image: url("../images/hebergements/mini_hor/cannebiere_l_hor.jpg");
+    }
 
 
     /* ACTIVITY SECTION */
