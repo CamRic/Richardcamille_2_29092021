@@ -73,6 +73,8 @@ header ul
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100%;
+    margin: 0px;
 }
 
 header li
@@ -81,6 +83,12 @@ header li
     justify-content: center;
     width: 50%;
     list-style: none;
+    align-items: center;
+}
+
+header p
+{
+    align-self: center;
 }
 
 header a
@@ -101,6 +109,21 @@ nav a
 {
     text-decoration: none;
     font-weight: normal;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+nav a:focus
+{
+    border-top: 2px #0065fc solid;
+}
+
+nav a:visited
+{
+    border-top: 2px #0065fc solid;
 }
 
 
@@ -112,6 +135,7 @@ nav a
 {
     margin-top: 50px;
     margin-left: 10px;
+    margin-bottom: 50px;
     width: 100%;
 }
 
@@ -140,6 +164,7 @@ p img
     display: flex;
     padding-left: 0;
     border: none;
+    margin: 20px;
 }
 
 .srch_input input
@@ -186,7 +211,7 @@ p img
     align-content: space-between;
     width: 100%;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .fltr_cntnr p
@@ -248,6 +273,11 @@ p img
     justify-content: space-between;
 }
 
+#acc_sct h1
+{
+    margin-left: 20px;
+}
+
 #acc_sct a
 {
     text-decoration: none;
@@ -263,6 +293,12 @@ p img
     background-color: #f2f2f2;
     border-radius: 25px;
     padding: 30px;
+    margin-bottom: 30px;
+}
+
+.all_acc_cntnr p
+{
+    margin-left: 20px;
 }
 
 .elem_cntnr
@@ -465,6 +501,11 @@ p img
     margin-bottom: 50px;
 }
 
+#act_sct h1
+{
+    margin: 20px;
+}
+
 .act_cntnr
 {
     display: flex;
@@ -583,10 +624,11 @@ footer
 /****************************************/
 /*  __________  RESPONSIVE __________  */
 
+/* TABLETTE and desktop < 1300px*/
 
-/* TABLETTE */
-@media all and (max-width: 992px)
+@media all and (max-width: 1300px)
 {
+    
     .all_acc_cntnr
     {
         width: 100%;
@@ -595,6 +637,7 @@ footer
     .elem_cntnr
     {
         width: 100%;
+        justify-content: space-evenly;
     }
 
     #pop_acc_cntnr
@@ -610,6 +653,7 @@ footer
         justify-content: space-around;
     }
 
+    
     .act_cntnr
     {
         width: 100%;
@@ -637,6 +681,17 @@ footer
     #hdr_logo
     {
         margin-left: 10px;
+    }
+
+    nav
+    {
+        height: 50px;
+    }
+
+    nav a:focus
+    {
+        border-top: none;
+        border-bottom: 2px #0065fc solid;
     }
 
     header nav
