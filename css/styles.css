@@ -26,7 +26,7 @@
 
 body 
 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	display: flex;
 	justify-content: center;
 }
@@ -35,6 +35,8 @@ body
 {
     width: 100%;
     max-width: 1400px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -44,10 +46,14 @@ body
 header
 {
     width: 100%;
-    height: 80px;
+    min-height: 80px;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
+
+
 
 /* Logo */
 #hdr_logo
@@ -58,19 +64,781 @@ header
 /* nav */
 nav
 {
-    margin-right: 20px;
+    margin-right: 50px;
+    width: 320px;
 }
 
 header ul
 {
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
 }
 
 header li
 {
     display: flex;
     justify-content: center;
-    width: 160px;
+    width: 50%;
     list-style: none;
+    align-items: center;
+}
+
+header p
+{
+    align-self: center;
+}
+
+header a
+{
+    text-decoration: none;
+    color: #0065fc;
+    font-weight: bold;
+}
+
+header a:visited
+{
+    text-decoration: none;
+    color: #0065fc;
+}
+
+
+nav a
+{
+    text-decoration: none;
+    font-weight: normal;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+nav a:focus
+{
+    border-top: 2px #0065fc solid;
+}
+
+nav a:visited
+{
+    border-top: 2px #0065fc solid;
+}
+
+
+
+/****************************************/
+/*  __________  SEARCH SCT __________  */
+
+#srch_sct
+{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#srch_sct h1
+{
+    margin-bottom: 2px;
+}
+
+#srch_sct p
+{
+    margin-top: 5px;
+}
+
+p img
+{
+    margin-right: 10px;
+}
+#srch_sct img
+{
+    margin-right: 10x;
+}
+
+/* input */
+.srch_input
+{
+    display: flex;
+    padding-left: 0;
+    border: none;
+    margin: 20px;
+}
+
+.srch_input input
+{
+    border-top: 1px #f2f2f2;
+    border-bottom: 1px #f2f2f2 solid;
+    border-left: none;
+    border-right: none;
+    padding-left: 10px;
+    width: 230px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+/* map marker */
+.map_mrkr_svg
+{
+    display: flex;
+    border: 1px #f2f2f2 solid;
+    width: 50px;
+    height: 50px;
+    background-color: #f2f2f2;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+
+/* button */
+.srch_bttn
+{
+    width: 130px;
+    height: 50px;
+    border: 1px lightgray solid;
+    border-top-right-radius: 10% 30%;
+    border-bottom-right-radius: 10% 30%;
+    background-color: #0065fc;
+    color: white;
+    font-size: 12pt;
+}
+
+/* filters */
+.fltr_cntnr
+{
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.fltr_cntnr p
+{
+    font-weight: bold;
+    margin-right: 10px;
+    
+}
+
+.fltr
+{
+    display: flex;
+    width: auto;
+    height: 50px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    max-width: 230px;
+    overflow: visible;
+}
+
+#eco
+{
+    width: 190px;
+}
+
+#family
+{
+    width: 150px;
+}
+
+#pet
+{
+    width: 240px;
+}
+
+#romantic
+{
+    width: 185px;
+}
+
+.fltr:hover
+{
+    background-color: #deebff;
+}
+
+
+/****************************************/
+/*  __________  ACCOMODATION ________  */
+
+#acc_sct
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+#acc_sct h1
+{
+    margin-left: 20px;
+}
+
+#acc_sct a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.all_acc_cntnr
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.all_acc_cntnr p
+{
+    margin-left: 20px;
+}
+
+.elem_cntnr
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-self: center;
+    width: 100%;
+}
+
+.acc_elem
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 245px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 12px grey;
+}
+
+.acc_elem_link
+{
+    color: black;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.popular
+{
+    width: 345px;
+    height: 145px;
+    flex-direction: row;
+}
+
+.acc_img_frame
+{
+    align-self: center;
+    width: 235px;
+    height: 115px;
+    margin-top: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cannebiere
+{
+    background-image: url("../images/hebergements/mini_hor/cannebiere_mini_hor.jpg");
+}
+
+#hotel_port
+{
+    background-image: url("../images/hebergements/mini_hor/amina_mini_hor.jpg");
+}
+
+#mouettes
+{
+    background-image: url("../images/hebergements/mini_hor/mouettes_mini_hor.jpg");
+}
+
+#hotel_mer
+{
+    background-image: url("../images/hebergements/mini_hor/hotel_mer_mini_hor.jpg");
+}
+
+#panier
+{
+    background-image: url("../images/hebergements/mini_hor/panier_mini_hor.jpg");
+}
+
+#amina
+{
+    background-image: url("../images/hebergements/mini_hor/amina_mini_hor.jpg");
+}
+
+#soleil
+{
+    background-image: url("../images/hebergements/mini_ver/soleil_mini_ver.jpg");
+}
+
+#coeur_eau
+{
+    background-image: url("../images/hebergements/mini_ver/coeur_deleau_mini_ver.jpg");
+}
+
+#bleublanc
+{
+    background-image: url("../images/hebergements/mini_ver/bleu_blanc_mini_ver.jpg");
+}
+
+.popular .acc_img_frame
+{
+    width: 125px;
+    height: 135px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.acc_dscrpt
+{
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+    height: 65px;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.popular .acc_dscrpt
+{
+    width: 200px;
+    height: 115px;
+    margin-top: 15px;
+}
+
+.acc_dscrpt h3
+{
+    margin: 2px;
+}
+
+.acc_dscrpt p
+{
+    margin: 2px;
+}
+
+.star_cntnr
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-left: 2px;
+}
+
+.star_cntnr img
+{
+    margin-right: 1px;
+}
+
+@media all and (max-device-width: 480px) 
+{
+    
+}
+
+/* popular accomodations */
+#pop_acc_cntnr
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 280px;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.hor_cntnr
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hor_cntnr img
+{
+    align-self: center;
+}
+
+.pop_acc_elem_cntnr
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-self: center;
+}
+
+
+/****************************************/
+/*  __________  ACTIVITIES __________  */
+
+#act_sct
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+#act_sct h1
+{
+    margin: 20px;
+}
+
+.act_cntnr
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    height: 445px;
+}
+
+.act_elem
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 445px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px grey;
+}
+
+.act_elem h3
+{
+    height: 55px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.act_img_frame
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-position: center;
+}
+
+.medium
+{
+    height: 235px;
+}
+
+.small
+{
+    height: 165px;
+}
+
+/* loading photos */ 
+#port_img
+{
+    background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+
+#pomegue_img
+{
+    background-image: url("../images/activites/lbl/pomegue_lbl_img.jpg");
+    
+}
+
+#frioul_img
+{
+    background-image: url("../images/activites/lbl/frioul_lbl_img.jpg");
+}
+
+#calanques_img
+{
+    background-image: url("../images/activites/lbl/calanques_lbl_img.jpg");
+}
+
+#nddlg_img
+{
+    background-image: url("../images/activites/lbl/nddlg_lbl_img.jpg");
+}
+
+#lngchmp_img
+{
+    background-image: url("../images/activites/lbl/longchamp_lbl_img.jpg");
+}
+
+/****************************************/
+/*  __________  FOOTER ______________  */
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+.footer_elem
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.footer_elem h2
+{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.footer_elem p
+{
+    margin-top: 5px;
+}
+
+
+/****************************************/
+/*  __________  RESPONSIVE __________  */
+
+/* TABLETTE and desktop < 1300px*/
+
+@media all and (max-width: 1300px)
+{
+    
+    .all_acc_cntnr
+    {
+        width: 100%;
+    }
+
+    .elem_cntnr
+    {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #pop_acc_cntnr
+    {
+        width: 100%;
+    }
+
+    .pop_acc_elem_cntnr
+    {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    
+    .act_cntnr
+    {
+        width: 100%;
+        height: 900px;
+        align-content: space-around;
+
+    }
+}
+
+
+@media all and (max-width: 768px) 
+{
+    /* BODY */
+    #mainContainer
+    {
+        width: 100%;
+    }
+
+    /* HEADER */
+    header
+    {
+        justify-content: space-between;
+    }
+
+    #hdr_logo
+    {
+        margin-left: 10px;
+    }
+
+    nav
+    {
+        height: 50px;
+    }
+
+    nav a:focus
+    {
+        border-top: none;
+        border-bottom: 2px #0065fc solid;
+    }
+
+    header nav
+    {
+        order: 3;
+        width: 80%;
+        justify-self: center;
+    }
+
+    nav ul
+    {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    nav li
+    {
+        width: 50%;
+    }
+
+    header p
+    {
+        align-self: flex-end;
+    }
+
+
+    /* search section */
+    .srch_bttn
+    {
+        width: 50px;
+        height: 50px;
+        background-image: url("../images/logo/search-solid.svg");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: 15px 15px;
+        border-radius: 15px;
+        font-size: 0;
+    }
+
+    #srch_sct p
+    {
+        display: flex;
+        width: 100%;
+    }
+
+    .fltr_cntnr
+    {
+        height: auto;
+    }
+
+    
+
+    /* accomodation section */
+    #acc_sct
+    {
+        justify-content: flex-start;
+    }
+
+    #pop_acc_cntnr
+    {
+        width: 100%;
+        border-radius: 5px;
+        padding: 15px;
+    }
+
+    
+
+    .all_acc_cntnr
+    {
+        background: none;
+        width: 100%;
+        align-self: center;
+        padding: 0px;
+    }
+
+    .elem_cntnr
+    {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .acc_elem
+    {
+        width: 335px;
+    }
+
+    .acc_elem .acc_img_frame
+    {
+        width: 325px;
+    }
+
+    .popular .acc_img_frame
+    {
+        width: 125px;
+    }
+
+    #cannebiere
+    {
+        background-image: url("../images/hebergements/mini_hor/cannebiere_l_hor.jpg");
+    }
+
+    #hotel_port
+    {
+        background-image: url("../images/hebergements/mini_hor/hotel_port_l_hor.jpg");
+    }
+
+    #mouettes
+    {
+        background-image: url("../images/hebergements/mini_hor/mouettes_l_hor.jpg");
+    }
+
+    #hotel_mer
+    {
+        background-image: url("../images/hebergements/mini_hor/hotel_mer_l_hor.jpg");
+    }
+
+    #panier
+    {
+        background-image: url("../images/hebergements/mini_hor/panier_l_hor.jpg");
+    }
+
+    #amina
+    {
+        background-image: url("../images/hebergements/mini_hor/amina_l_hor.jpg");
+    }
+
+
+    /* ACTIVITY SECTION */
+    .act_cntnr
+    {
+        height: auto;
+        align-content: center;
+        align-items: center;
+    }
+
+    .act_elem
+    {
+        height: 190px;
+        margin-bottom: 25px;
+    }
+
+    /* FOOTER */
+    footer
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
