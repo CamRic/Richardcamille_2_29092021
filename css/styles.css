@@ -416,27 +416,7 @@ p img
 
 @media all and (max-device-width: 480px) 
 {
-    .elem_cntnr
-    {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
-    }
-
-    .acc_elem
-    {
-        width: 335px;
-    }
-
-    .acc_elem .acc_img_frame
-    {
-        width: 325px;
-    }
-
-    .popular .acc_img_frame
-    {
-        width: 125px;
-    }
+    
 }
 
 /* popular accomodations */
@@ -602,6 +582,11 @@ footer
 /****************************************/
 /*  __________  RESPONSIVE __________  */
 
+
+/* TABLETTE */
+
+
+
 @media all and (max-device-width: 480px) 
 {
     /* BODY */
@@ -694,9 +679,56 @@ footer
         padding: 0px;
     }
 
+    .elem_cntnr
+    {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .acc_elem
+    {
+        width: 335px;
+    }
+
+    .acc_elem .acc_img_frame
+    {
+        width: 325px;
+    }
+
+    .popular .acc_img_frame
+    {
+        width: 125px;
+    }
+
     #cannebiere
     {
         background-image: url("../images/hebergements/mini_hor/cannebiere_l_hor.jpg");
+    }
+
+    #hotel_port
+    {
+        background-image: url("../images/hebergements/mini_hor/hotel_port_l_hor.jpg");
+    }
+
+    #mouettes
+    {
+        background-image: url("../images/hebergements/mini_hor/mouettes_l_hor.jpg");
+    }
+
+    #hotel_mer
+    {
+        background-image: url("../images/hebergements/mini_hor/hotel_mer_l_hor.jpg");
+    }
+
+    #panier
+    {
+        background-image: url("../images/hebergements/mini_hor/panier_l_hor.jpg");
+    }
+
+    #amina
+    {
+        background-image: url("../images/hebergements/mini_hor/amina_l_hor.jpg");
     }
 
 
