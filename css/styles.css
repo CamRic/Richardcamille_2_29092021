@@ -1,25 +1,3 @@
-/****************************************/
-/*  __________  DEV HELP ____________  */
-/*
-.brdr
-{
-    border: 2px solid black;
-}
-
-._red
-{
-    border-color: red;
-}
-
-._green
-{
-    border-color: green;
-}
-
-._blue
-{
-    border-color: blue;
-}
 
 /****************************************/
 /*  __________  GENERAL ______________  */
@@ -61,7 +39,7 @@ header
     margin-right: auto;
 }
 
-/* nav */
+/* Nav */
 nav
 {
     margin-right: 50px;
@@ -98,11 +76,7 @@ header a
     font-weight: bold;
 }
 
-header a:visited
-{
-    text-decoration: none;
-    color: #0065fc;
-}
+
 
 
 nav a
@@ -114,16 +88,20 @@ nav a
     align-items: center;
     width: 100%;
     justify-content: center;
+    color: black;
+    border-top: 2px white solid;
 }
 
 nav a:focus
 {
-    border-top: 2px #0065fc solid;
+    border-top: solid;
+    color: #0065fc;
 }
 
-nav a:visited
+nav a:hover
 {
-    border-top: 2px #0065fc solid;
+    border-top: solid;
+    color: #0065fc;
 }
 
 
@@ -169,8 +147,8 @@ p img
 
 .srch_input input
 {
-    border-top: 1px #f2f2f2;
-    border-bottom: 1px #f2f2f2 solid;
+    border-top: 3px #f2f2f2 solid;
+    border-bottom: 3px #f2f2f2 solid;
     border-left: none;
     border-right: none;
     padding-left: 10px;
@@ -183,7 +161,7 @@ p img
 .map_mrkr_svg
 {
     display: flex;
-    border: 1px #f2f2f2 solid;
+    border: 3px #f2f2f2 solid;
     width: 50px;
     height: 50px;
     background-color: #f2f2f2;
@@ -195,7 +173,7 @@ p img
 .srch_bttn
 {
     width: 130px;
-    height: 50px;
+    height: 55px;
     border: 1px lightgray solid;
     border-top-right-radius: 10% 30%;
     border-bottom-right-radius: 10% 30%;
@@ -232,6 +210,7 @@ p img
     margin-bottom: 15px;
     max-width: 230px;
     overflow: visible;
+    font-weight: bold;
 }
 
 #eco
@@ -257,6 +236,7 @@ p img
 .fltr:hover
 {
     background-color: #deebff;
+    cursor: pointer;
 }
 
 
@@ -605,7 +585,6 @@ footer
 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin-bottom: 40px;
 }
 
@@ -681,6 +660,18 @@ footer
     #hdr_logo
     {
         margin-left: 10px;
+    }
+
+    nav a
+    {
+        border-bottom: 2px solid lightgray;
+        border-top: none;
+    }
+
+    nav a:hover
+    {
+        border-top: none;
+        border-bottom: 2px #0065fc solid;
     }
 
     nav
@@ -839,6 +830,13 @@ footer
     {
         flex-direction: column;
         align-items: center;
+    }
+
+    .footer_elem
+    {
+        
+    align-items: center;
+    width: 100%;
     }
 
 }
