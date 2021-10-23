@@ -691,6 +691,7 @@ footer
         order: 3;
         width: 100%;
         justify-self: center;
+        margin: 0px;
     }
 
     nav ul
