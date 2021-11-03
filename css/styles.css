@@ -10,7 +10,6 @@ body
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1400px;
     margin: 0px;
 }
 
@@ -612,10 +611,6 @@ footer
 
 @media all and (max-width: 1300px)
 {
-    body
-    {
-        width: auto;
-    }
 
     #mainContainer
     {
