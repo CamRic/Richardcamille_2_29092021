@@ -13,6 +13,13 @@ body
     margin: 0px;
 }
 
+main
+{
+    width: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
 #mainContainer
 {
     width: 100%;
@@ -27,12 +34,14 @@ body
 
 header
 {
-    width: 100%;
+    width: auto;
     min-height: 80px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 
@@ -116,9 +125,7 @@ nav a:hover
 
 #srch_sct
 {
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-bottom: 50px;
+    margin: 30px;
     width: auto;
 }
 
@@ -660,6 +667,12 @@ footer
     #mainContainer
     {
         width: 100%;
+    }
+
+    main
+    {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     /* HEADER */
