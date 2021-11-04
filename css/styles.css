@@ -15,7 +15,7 @@ body
 
 #mainContainer
 {
-    width: 95%;
+    width: 100%;
     max-width: 1400px;
     display: flex;
     flex-direction: column;
@@ -71,6 +71,7 @@ header li
 header p
 {
     align-self: center;
+    margin-right: 10px;
 }
 
 header a
@@ -118,7 +119,7 @@ nav a:hover
     margin-top: 50px;
     margin-left: 10px;
     margin-bottom: 50px;
-    width: 100%;
+    width: auto;
 }
 
 #srch_sct h1
@@ -583,6 +584,7 @@ footer
     flex-wrap: wrap;
     background-color: lightgrey;
     width: 100%;
+    padding-top: 20px;
 }
 
 .footer_elem
@@ -614,7 +616,7 @@ footer
 
     #mainContainer
     {
-        width: 95%;
+        width: 100%;
     }
     
     .all_acc_cntnr
@@ -657,7 +659,7 @@ footer
     /* BODY */
     #mainContainer
     {
-        width: 95%;
+        width: 100%;
     }
 
     /* HEADER */
@@ -840,15 +842,14 @@ footer
     footer
     {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         padding-top: 20px;
-        padding-left: 50px;
     }
 
     .footer_elem
     {
     align-items: flex-start;
-    width: 100%;
+    margin-left: 20px;
     }
 
 }
